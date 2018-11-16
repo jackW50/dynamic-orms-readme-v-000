@@ -17,6 +17,7 @@ DB[:conn].execute("SELECT songs.name FROM songs WHERE songs.name = 'dog'")
 Song.find_by_name("Hello")
 new_insert = {:name => "New Song", :album => "New Album"}
 
-a = Song.new(new_insert).name
+a = Song.new(new_insert)
+a.name
 
 binding.pry
