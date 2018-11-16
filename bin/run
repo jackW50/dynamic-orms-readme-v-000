@@ -19,4 +19,5 @@ new_insert = {:name => "New Song", :album => "New Album"}
 
 a = Song.new(new_insert).name
 puts a.name
+
 binding.pry
